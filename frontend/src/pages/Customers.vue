@@ -85,7 +85,7 @@ export default {
                 alamat: '',
                 contact: '',
                 diskon: '',
-                tipe_diskon: '',
+                tipe_diskon: 'fix',
                 ktp: '',
             },
             tableData,
@@ -121,15 +121,17 @@ export default {
             reader.readAsDataURL(image);
         },
         add() {
-            this.$modal.show('addmodal');
+          stateform = 'add';
             this.form = {
                 nama: '',
                 alamat: '',
                 contact: '',
                 diskon: '',
-                tipe_diskon: '',
+                tipe_diskon: 'fix',
                 ktp: '',
             };
+            this.$modal.show('addmodal');
+            
         },
         submit() {
             let url = apiurl + '/api/customers';

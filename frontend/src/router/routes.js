@@ -4,14 +4,9 @@ import NotFound from "@/pages/NotFoundPage.vue";
 
 // Admin pages
 import Dashboard from "@/pages/Dashboard.vue";
-import UserProfile from "@/pages/UserProfile.vue";
 import Customers from "@/pages/Customers.vue";
 import Items from "@/pages/Items.vue";
 import Sales from "@/pages/Sales.vue";
-import Icons from "@/pages/Icons.vue";
-import Maps from "@/pages/Maps.vue";
-import Typography from "@/pages/Typography.vue";
-import WorkSpace from "@/pages/WorkSpace.vue";
 
 const routes = [
   {
@@ -20,19 +15,9 @@ const routes = [
     redirect: "/dashboard",
     children: [
       {
-        path: "dashboard",
-        name: "dashboard",
-        component: Dashboard
-      },
-      {
         path: "customers",
         name: "customers",
         component: Customers
-      },
-      {
-        path: "maps",
-        name: "maps",
-        component: Maps
       },
       {
         path: "items",
@@ -44,32 +29,6 @@ const routes = [
         name: "sales",
         component: Sales
       },
-      {
-        path: "stats",
-        name: "stats",
-        component: UserProfile
-      },
-      
-      {
-        path: "icons",
-        name: "icons",
-        component: Icons
-      },
-      // {
-      //   path: "maps",
-      //   name: "maps",
-      //   component: Maps
-      // },
-      {
-        path: "questionnaire",
-        name: "questionnaire",
-        component: Typography
-      },
-      {
-        path: "table-list",
-        name: "table-list",
-        component: WorkSpace
-      }
     ]
   },
   { path: "*", component: NotFound }

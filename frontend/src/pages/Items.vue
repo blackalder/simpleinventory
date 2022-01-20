@@ -78,7 +78,7 @@ export default {
         return {
             form: {
                 nama_item: '',
-                unit: '',
+                unit: 'pcs',
                 stok: '',
                 harga_satuan: '',
                 barang: '',
@@ -108,15 +108,15 @@ export default {
         },
         add() {
             stateform = 'add';
-            this.$modal.show('addmodal');
             this.form = {
-                nama: '',
-                alamat: '',
-                contact: '',
-                diskon: '',
-                tipe_diskon: '',
-                ktp: '',
+                nama_item: '',
+                unit: 'pcs',
+                stok: '',
+                harga_satuan: '',
+                barang: '',
             };
+            this.$modal.show('addmodal');
+            
         },
         getData() {
             axios.get(apiurl + '/api/items')

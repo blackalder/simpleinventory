@@ -1,6 +1,8 @@
 <template>
     <div class="row">
         <button class="btn" @click="add">Add</button>
+        <vue-suggestion :items="customers" v-model="form.customer_id" , :setLabel="setLabel" , :itemTemplate="itemTemplate" , @onInputChange="inputChange" , @onItemSelected="itemSelected">
+                            </vue-suggestion>
         <modal name="addmodal" transition="pop-out" :width="modalWidth" :focus-trap="true" :height="500">
             <div class="box">
                 <div class="partition" id="partition-register">
@@ -9,8 +11,7 @@
                         <form autocomplete="false">
                             <input id="n-trx" type="text" placeholder="Code Transaksi" v-model="form.code_transaksi">
                             <input id="n-trx" type="text" placeholder="Customer ID" v-model="form.customer_id">
-                            <vue-suggestion :items="customers" v-model="form.customer_id" , :setLabel="setLabel" , :itemTemplate="itemTemplate" , @onInputChange="inputChange" , @onItemSelected="itemSelected">
-                            </vue-suggestion>
+                            
                             <div class="form-group row" v-for="(item, k) in form.items" :key="k">
                                 <div class="col-md-5">
                                     <input id="item" type="text" class="form-control" name="item" v-model="form.items[k].item_id" placeholder="Item">

@@ -2,7 +2,6 @@
   <div class="wrapper">
     <side-bar>
       <template slot="links">
-        <sidebar-link to="/dashboard" name="Dashboard" icon="ti-panel"/>
         <sidebar-link to="/customers" name="Customers" icon="ti-user"/>
         <sidebar-link to="/items" name="Items" icon="ti-image"/>
         <sidebar-link to="/sales" name="Sales" icon="ti-shopping-cart"/>
