@@ -1,0 +1,581 @@
+{
+  "info": {
+    "name": "Untitled Paw Document 3",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "INVENTORY",
+      "item": [
+        {
+          "name": "sales",
+          "item": [
+            {
+              "name": "list",
+              "request": {
+                "method": "GET",
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/sales",
+                  "query": null,
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "sales"
+                  ]
+                },
+                "description": "",
+                "header": [],
+                "body": null,
+                "auth": null
+              },
+              "protocolProfileBehavior": {
+                "followRedirects": false,
+                "followOriginalHttpMethod": false,
+                "followAuthorizationHeader": false
+              },
+              "response": []
+            },
+            {
+              "name": "get",
+              "request": {
+                "method": "GET",
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/customers/1",
+                  "query": null,
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "customers",
+                    "1"
+                  ]
+                },
+                "description": "",
+                "header": [],
+                "body": null,
+                "auth": null
+              },
+              "protocolProfileBehavior": {
+                "followRedirects": false,
+                "followOriginalHttpMethod": false,
+                "followAuthorizationHeader": false
+              },
+              "response": []
+            },
+            {
+              "name": "delete",
+              "request": {
+                "method": "DELETE",
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/sales/9",
+                  "query": null,
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "sales",
+                    "9"
+                  ]
+                },
+                "description": "",
+                "header": [],
+                "body": null,
+                "auth": null
+              },
+              "protocolProfileBehavior": {
+                "followRedirects": false,
+                "followOriginalHttpMethod": false,
+                "followAuthorizationHeader": false
+              },
+              "response": []
+            },
+            {
+              "name": "add",
+              "request": {
+                "method": "POST",
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/sales",
+                  "query": null,
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "sales"
+                  ]
+                },
+                "description": "",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "description": null
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "disabled": false,
+                  "raw": "{\"code_transaksi\":\"183762\",\"customer_id\":\"2\",\"items\":[{\"item_id\":\"1\",\"qty\":\"1\"},{\"item_id\":\"2\",\"qty\":\"12\"}]}"
+                },
+                "auth": null
+              },
+              "protocolProfileBehavior": {
+                "followRedirects": false,
+                "followOriginalHttpMethod": false,
+                "followAuthorizationHeader": false
+              },
+              "response": []
+            }
+          ],
+          "protocolProfileBehavior": null,
+          "response": []
+        },
+        {
+          "name": "customer",
+          "item": [
+            {
+              "name": "list",
+              "request": {
+                "method": "GET",
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/customers",
+                  "query": null,
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "customers"
+                  ]
+                },
+                "description": "",
+                "header": [],
+                "body": null,
+                "auth": null
+              },
+              "protocolProfileBehavior": {
+                "followRedirects": false,
+                "followOriginalHttpMethod": false,
+                "followAuthorizationHeader": false
+              },
+              "response": []
+            },
+            {
+              "name": "get",
+              "request": {
+                "method": "GET",
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/customers/1",
+                  "query": null,
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "customers",
+                    "1"
+                  ]
+                },
+                "description": "",
+                "header": [],
+                "body": null,
+                "auth": null
+              },
+              "protocolProfileBehavior": {
+                "followRedirects": false,
+                "followOriginalHttpMethod": false,
+                "followAuthorizationHeader": false
+              },
+              "response": []
+            },
+            {
+              "name": "delete",
+              "request": {
+                "method": "DELETE",
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/customers/1",
+                  "query": null,
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "customers",
+                    "1"
+                  ]
+                },
+                "description": "",
+                "header": [],
+                "body": null,
+                "auth": null
+              },
+              "protocolProfileBehavior": {
+                "followRedirects": false,
+                "followOriginalHttpMethod": false,
+                "followAuthorizationHeader": false
+              },
+              "response": []
+            },
+            {
+              "name": "add",
+              "request": {
+                "method": "POST",
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/customers",
+                  "query": null,
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "customers"
+                  ]
+                },
+                "description": "",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "description": null
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "disabled": false,
+                  "raw": "{\"nama\":\"Maman \",\"contact\":\"0873618273\",\"alamat\":\"jalan raya banjaran\",\"diskon\":\"10\",\"tipe_diskon\":\"percent\",\"ktp\":\"1323213\"}"
+                },
+                "auth": null
+              },
+              "protocolProfileBehavior": {
+                "followRedirects": false,
+                "followOriginalHttpMethod": false,
+                "followAuthorizationHeader": false
+              },
+              "response": []
+            },
+            {
+              "name": "update",
+              "request": {
+                "method": "PUT",
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/customers/2",
+                  "query": null,
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "customers",
+                    "2"
+                  ]
+                },
+                "description": "",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "description": null
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "disabled": false,
+                  "raw": "{\"nama\":\"Maman Abdurahman\",\"contact\":\"08327463\",\"alamat\":\"jalan raya no 9\",\"diskon\":\"10\",\"tipe_diskon\":\"percent\",\"ktp\":\"1234\"}"
+                },
+                "auth": null
+              },
+              "protocolProfileBehavior": {
+                "followRedirects": false,
+                "followOriginalHttpMethod": false,
+                "followAuthorizationHeader": false
+              },
+              "response": []
+            }
+          ],
+          "protocolProfileBehavior": null,
+          "response": []
+        },
+        {
+          "name": "item",
+          "item": [
+            {
+              "name": "list",
+              "request": {
+                "method": "GET",
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/items",
+                  "query": null,
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "items"
+                  ]
+                },
+                "description": "",
+                "header": [],
+                "body": null,
+                "auth": null
+              },
+              "protocolProfileBehavior": {
+                "followRedirects": false,
+                "followOriginalHttpMethod": false,
+                "followAuthorizationHeader": false
+              },
+              "response": []
+            },
+            {
+              "name": "search",
+              "request": {
+                "method": "GET",
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/items/q/handuk size xl",
+                  "query": null,
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "items",
+                    "q",
+                    "handuk size xl"
+                  ]
+                },
+                "description": "",
+                "header": [],
+                "body": null,
+                "auth": null
+              },
+              "protocolProfileBehavior": {
+                "followRedirects": false,
+                "followOriginalHttpMethod": false,
+                "followAuthorizationHeader": false
+              },
+              "response": []
+            },
+            {
+              "name": "get",
+              "request": {
+                "method": "GET",
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/items/1",
+                  "query": null,
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "items",
+                    "1"
+                  ]
+                },
+                "description": "",
+                "header": [],
+                "body": null,
+                "auth": null
+              },
+              "protocolProfileBehavior": {
+                "followRedirects": false,
+                "followOriginalHttpMethod": false,
+                "followAuthorizationHeader": false
+              },
+              "response": []
+            },
+            {
+              "name": "delete",
+              "request": {
+                "method": "DELETE",
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/items/1",
+                  "query": null,
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "items",
+                    "1"
+                  ]
+                },
+                "description": "",
+                "header": [],
+                "body": null,
+                "auth": null
+              },
+              "protocolProfileBehavior": {
+                "followRedirects": false,
+                "followOriginalHttpMethod": false,
+                "followAuthorizationHeader": false
+              },
+              "response": []
+            },
+            {
+              "name": "add",
+              "request": {
+                "method": "POST",
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/items",
+                  "query": null,
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "items"
+                  ]
+                },
+                "description": "",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "description": null
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "disabled": false,
+                  "raw": "{\"nama_item\":\"handuk size s\",\"unit\":\"pcs\",\"stok\":\"50\",\"harga_satuan\":\"5000\",\"barang\":\"1\"}"
+                },
+                "auth": null
+              },
+              "protocolProfileBehavior": {
+                "followRedirects": false,
+                "followOriginalHttpMethod": false,
+                "followAuthorizationHeader": false
+              },
+              "response": []
+            },
+            {
+              "name": "update",
+              "request": {
+                "method": "PUT",
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/items/2",
+                  "query": null,
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "items",
+                    "2"
+                  ]
+                },
+                "description": "",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "disabled": false,
+                    "description": null
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "disabled": false,
+                  "raw": "{\"nama_item\":\"handuk dewasa\",\"unit\":\"pcs\",\"stok\":\"50\",\"harga_satuan\":\"5000\",\"barang\":\"1\"}"
+                },
+                "auth": null
+              },
+              "protocolProfileBehavior": {
+                "followRedirects": false,
+                "followOriginalHttpMethod": false,
+                "followAuthorizationHeader": false
+              },
+              "response": []
+            }
+          ],
+          "protocolProfileBehavior": null,
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": null,
+      "response": []
+    }
+  ]
+}
